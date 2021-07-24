@@ -1,0 +1,8 @@
+{
+    "name": "hexlet/code",
+    "description": "my first project at hexlet",
+    "type": "project",
+    "license": "none",
+    "minimum-stability": "dev",
+    "require": {}
+}
