@@ -1,8 +1,20 @@
 name: linter-test
-on: push
+
+on: 
+  - push
+  - pull_request
+
 jobs:
-  my-job:
+
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: linter
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0.8'
+      - name: Install
+        run: make install
+      - name: Run linter
         run: make lint
