@@ -15,6 +15,6 @@
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         },
-        "files": "src/Cli.php" 
+        "files": ["src/Cli.php"] 
     }
 }
