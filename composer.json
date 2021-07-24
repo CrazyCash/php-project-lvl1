@@ -4,5 +4,5 @@
     "type": "project",
     "license": "none",
     "minimum-stability": "dev",
-    "require": {}
+    "bin": ["bin/brain-games"]
 }
