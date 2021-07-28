@@ -17,6 +17,7 @@
         },
         "files": [
             "src/Cli.php",
+            "src/GameList.php",
             "src/Games/IsEven.php"
         ]
     },
