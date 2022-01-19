@@ -13,7 +13,8 @@
     ],
     "minimum-stability": "dev",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "require": {
         "php": ">=7.4",
@@ -24,7 +25,8 @@
             "Hexlet\\Code\\": "src"
         },
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/EvenGame.php"
         ]
     },
     "require-dev": {
