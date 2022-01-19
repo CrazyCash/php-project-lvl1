@@ -1,14 +1,22 @@
 {
     "name": "hexlet/code",
-    "description": "my first project at hexlet",
-    "type": "project",
-    "license": "proprietary",
+    "description": "Hexlet PHP Project lvl 1",
+    "homepage": "https://github.com/CrazyCash/php-project-lvl1",
+    "type": "lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andriy Boychenko",
+            "email": "aroneger2018@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "minimum-stability": "dev",
     "bin": [
-        "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-games"
     ],
     "require": {
+        "php": ">=7.4",
         "wp-cli/php-cli-tools": "^0.11.12"
     },
     "autoload": {
@@ -16,9 +24,7 @@
             "Hexlet\\Code\\": "src"
         },
         "files": [
-            "src/Cli.php",
-            "src/GameList.php",
-            "src/Games/IsEven.php"
+            "src/Cli.php"
         ]
     },
     "require-dev": {
