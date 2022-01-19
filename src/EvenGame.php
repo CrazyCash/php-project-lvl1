@@ -32,11 +32,13 @@ function even()
                     line("Congratulations, {$username}!");
                 }
             } else {
-                line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$expectedAnswer}'" . PHP_EOL . "Let's try again, {$username}!");
+                line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$expectedAnswer}'");
+                line("Let's try again, {$username}!");
                 $currentRound = 1;
             }
         } else {
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$expectedAnswer}'" . PHP_EOL . "Let's try again, {$username}!");
+            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$expectedAnswer}'");
+            line("Let's try again, {$username}!");
             $currentRound = 1;
         }
     } while ($currentRound <= 3);
