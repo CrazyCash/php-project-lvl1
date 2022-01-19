@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "524ac22ee24484ea95072eaa8adf10a9",
+    "content-hash": "28c8c379220e95349c923b7f4fdc5c07",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
@@ -68,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "6e0936ac9d00e75d02d97c808357294c9522a010"
+                "reference": "7caf9262b096b3d3546b3939993cc8970727bd86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6e0936ac9d00e75d02d97c808357294c9522a010",
-                "reference": "6e0936ac9d00e75d02d97c808357294c9522a010",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/7caf9262b096b3d3546b3939993cc8970727bd86",
+                "reference": "7caf9262b096b3d3546b3939993cc8970727bd86",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-07-20T22:36:05+00:00"
+            "time": "2022-01-17T02:05:49+00:00"
         }
     ],
     "aliases": [],
@@ -126,7 +126,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.4"
+    },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
