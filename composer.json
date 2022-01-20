@@ -14,7 +14,8 @@
     "minimum-stability": "dev",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "require": {
         "php": ">=7.4",
@@ -27,6 +28,7 @@
         "files": [
             "src/Cli.php",
             "src/Engine.php",
+            "src/Games/CalcGame.php",
             "src/Games/EvenGame.php"
         ]
     },

@@ -13,8 +13,12 @@ function isEven($num)
 }
 function even()
 {
-    $question = [rand(0, 255), rand(0, 255), rand(0, 255)];
-    $expectedNum = [isEven($question[0]), isEven($question[1]), isEven($question[2])];
+    $question = [];
+    $expectedNum = [];
+    for ($i = 0; $i < 11; $i++) {
+        $question[$i] = rand(0, 255);
+        $expectedNum[$i] = isEven($question[$i]);
+    }
     $username = greeting(DESC);
     main($username, $question, $expectedNum);
 }

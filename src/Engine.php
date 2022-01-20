@@ -21,7 +21,7 @@ function incorrect($userAnswer, $expectedAnswer, $username)
 
 function main($username, $question, $expectedAnswer)
 {
-    $currentRound = 1;
+    $currentRound = 0;
     $i = 0;
     do {
         line('Question: ' . $question[$i]);
@@ -31,17 +31,28 @@ function main($username, $question, $expectedAnswer)
             if ($userAnswer === $expectedAnswer[$i]) {
                 line('Correct!');
                 $currentRound++;
-                if ($currentRound == 4) {
+                if ($currentRound == 3) {
                     line("Congratulations, {$username}!");
                 }
             } else {
                 incorrect($userAnswer, $expectedAnswer[$i], $username);
-                $currentRound = 1;
+                $currentRound = 0;
+            }
+        } elseif (is_numeric($userAnswer)) {
+            if ($userAnswer == $expectedAnswer[$i]) {
+                line('Correct!');
+                $currentRound++;
+                if ($currentRound == 3) {
+                    line("Congratulations, {$username}!");
+                }
+            } else {
+                incorrect($userAnswer, $expectedAnswer[$i], $username);
+                $currentRound = 0;
             }
         } else {
             incorrect($userAnswer, $expectedAnswer[$i], $username);
-            $currentRound = 1;
+            $currentRound = 0;
         }
         $i++;
-    } while ($currentRound <= 3);
+    } while ($currentRound <= 2);
 }
