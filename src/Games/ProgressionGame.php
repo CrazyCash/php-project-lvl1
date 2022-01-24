@@ -15,7 +15,7 @@ function getQuestion()
     $buf = [$startNum];
 
     for ($i = 1; $i <= $range; $i++) {
-        $buf[$i] = $buf[$i-1] + $progression;
+        $buf[$i] = $buf[$i - 1] + $progression;
     }
 
     return implode(" ", $buf);
@@ -24,14 +24,14 @@ function getQuestion()
 function getAnswer(&$question)
 {
     $inputData = explode(" ", $question);
-    $randIndex = rand(0, count($inputData)-1);
+    $randIndex = rand(0, count($inputData) - 1);
     $answer = $inputData[$randIndex];
     $inputData[$randIndex] = '..';
     $question = implode(" ", $inputData);
     return $answer;
 }
 
-function  progression()
+function progression()
 {
     $arrQuestions = [];
     $arrAnswers = [];
