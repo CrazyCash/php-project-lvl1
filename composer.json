@@ -15,7 +15,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "require": {
         "php": ">=7.4",
@@ -29,7 +30,8 @@
             "src/Cli.php",
             "src/Engine.php",
             "src/Games/CalcGame.php",
-            "src/Games/EvenGame.php"
+            "src/Games/EvenGame.php",
+            "src/Games/GcdGame.php"
         ]
     },
     "require-dev": {
