@@ -2,7 +2,7 @@
     "name": "hexlet/code",
     "description": "Hexlet PHP Project lvl 1",
     "homepage": "https://github.com/CrazyCash/php-project-lvl1",
-    "type": "lib",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
